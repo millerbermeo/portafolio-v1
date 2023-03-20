@@ -26,10 +26,10 @@
 
                 <ul class="nav-menu">
                     <li class="home"><i id="house" class="fa-solid fa-house-chimney"></i></i><a id="home" href="">Home</a></li>
-                    <li><i class="fa-solid fa-user"></i><a href="">About me</a></li>
+                    <li><i class="fa-solid fa-user"></i><a href="sub_me/about.html">About me</a></li>
                     <li><i class="fa-solid fa-server"></i><a  href="">Services</a></li>
                     <li><i class="fa-solid fa-box"></i><a onclick="mostrar()" href="#portafolio">Portfolio</a></li>
-                    <li><i class="fa-solid fa-comment"></i></i></i><a href="">Contact</a></li>
+                    <li><i class="fa-solid fa-comment"></i></i></i><a onclick="mostrar()"  href="#section-2">Contact</a></li>
                 </ul>
 
                 <p>Copyright © Miller Rivera. 
@@ -48,10 +48,10 @@
                     <p>i'm a web Designer with extensive experience for over 2 years. My expertise is to create and website desing, graphic desing, and many more...</p>
 
                     <div class="redes">
-                        <i class="fa-brands fa-square-github"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-square-twitter"></i>
-                        <i class="fa-solid fa-envelope"></i>
+                        <a href="https://github.com/millerbermeo" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/miller-rivera-306bb41b7/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/MillerR28049729" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#section-2" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                     </div>
 
                     <button class="btn-1">More About Me</button>
@@ -82,47 +82,47 @@
             
             <div class="tarjetas">
 
-                <a href="subpages/fuentes_margin_padding/fuentes.html"><div>
+                <a href="subpages/fuentes_margin_padding/fuentes.html" target="_blank"><div>
                     <i class="fa-solid fa-font"></i>
                     <h3>Fonts</h3>
                 </div></a>
 
-                <a href="subpages/fuentes_margin_padding/margin-padding.html"><div>
+                <a href="subpages/fuentes_margin_padding/margin-padding.html" target="_blank"><div>
                     <i class="fa-solid fa-chart-area"></i>
                     <h3>Margin and Pading</h3>
                 </div></a>
 
-                <a href="subpages/fuentes_margin_padding/contenedor.html"><div>
+                <a href="subpages/fuentes_margin_padding/contenedor.html" target="_blank"><div>
                     <i class="fa-solid fa-box"></i>
                     <h3>Container</h3>
                 </div></a>
 
-                <a href="subpages/"><div>
+                <a href="subpages/" target="_blank"><div>
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h3>Store</h3>
                 </div></a>
 
-                <a href="subpages/boxshadow/index.html"><div>
+                <a href="subpages/boxshadow/index.html" target="_blank"><div>
                     <i class="fa-solid fa-inbox"></i>
                     <h3>Box Shadow</h3>
                 </div></a>
 
-                <a href="subpages/tabla/tabla.html"><div>
+                <a href="subpages/tabla/tabla.html" target="_blank"><div>
                     <i class="fa-solid fa-table"></i>
                     <h3>Tables</h3>
                 </div></a>
 
-                <a href="subpages/form/index.html"><div>
+                <a href="subpages/form/index.html" target="_blank"><div>
                     <i class="fa-solid fa-list"></i>
                     <h3>Form</h3>
                 </div></a>
 
-                <a href="subpages/iconos/iconos.html"><div>
+                <a href="subpages/iconos/iconos.html" target="_blank"><div>
                     <i class="fa-solid fa-icons"></i>
                     <h3>icons</h3>
                 </div></a>
 
-                <a href="subpages/sena/sena.html"><div>
+                <a href="subpages/sena/sena.html" target="_blank"><div>
                     <i class="fa-solid fa-s"></i>
                     <h3>Menu</h3>
                 </div></a>
@@ -130,8 +130,40 @@
 
                 
             </div>
+
+            <div id="section-2" class="section-2">
+                <div class="contact">
+                    <h3>CONTACT INFORMATION</h3>
+                    <P>millerrbermeo30@gmail.com</P>
+                    <p>+57 3123404060</p>
+                </div>
+                <div class="infor">
+                    <form action="">
+                        <label for="">SEND A MESSAGE</label>
+                    <P>
+                        <label for="">Name*</label>
+                        <input type="text">
+                    </P>
+                    <P>
+                        <label for="">Tel / Phone</label>
+                        <input type="text">
+                    </P>
+                    <P>
+                        <label for="">Email</label>
+                        <input type="text">
+                    </P>
+                    <P>
+                        <label for="">Message*</label>
+                        <input type="text">
+                    </P>
+
+                    <button class="btn" type="submit">Send</button>
+                    </form>
+                    
+                </div>
+            </div>
         </section>
-        
+
     </div>
 </body>
 </html>

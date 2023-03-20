@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222222;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    background-color: #222222;
+    margin: auto;
+    width: 90%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+}
+
+.diseno {
+    width: 60%;
+    padding: 30px;
+    height: 90vh;
+}
+
+.diseno p {
+    color: grey;
+    font-weight: bold;
+}
+
+.diseno p span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.h2-uno {
+    width: 400px;
+    border-bottom: 2px solid grey;
+    font-size: 40px;
+    color: #fb5b10;
+
+}
+
+.h2-dos {
+    width: 410px;
+    margin-left: 70px;
+    border-bottom: 2px solid grey;
+    font-size: 40px;
+    color: #ffffff;
+    padding-bottom: 3px;
+}
+
+.btn-1 {
+    width: 150px;
+    height: 38px;
+    display: flex;
+    margin: 30px auto;
+    padding: 11px 60px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #222222;
+    border-bottom: 2px solid #fb5b10;
+    transition: 1.4s;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: #fb5b10;
+}
+
+.img {
+    margin: 30px 10px;
+}
+
+.img-1 {
+    width: 130px;
+    height: 110px;
+    margin-left: 10px;
+    transition: 1s;
+}
+
+.img-1:hover {
+    transform: scale(1.1);
+}
+
+.diseno-1 {
+    width: 45%;
+    height: 90vh;
+}
+
+.recuadro {
+    margin: 50px 0px;
+    margin-left: 65px;
+    width: 400px;
+    height: 500px;
+}
+/* menu lateral derecho */
+
+.menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 30vh;
+    right: 0;
+    width: 53px;
+    height: 230px;
+    border: 1px solid #fb5b10;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    margin: auto;
+}
+
+.menu a i {
+    font-size: 30px;
+    margin: auto;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}

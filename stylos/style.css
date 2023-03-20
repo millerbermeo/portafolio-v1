@@ -201,7 +201,7 @@ p {
 .cuadro {
     width: 320px;
     height: 55vh;
-    background-image: url('../img/eminem2.png');
+    background-image: url('../img/miller.png');
     background-size: cover;
 }
 
@@ -261,6 +261,67 @@ a {
 }
 
 
+/* 
+.informacion de conttacto */
 
 
+.section-2 {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    background-color:  #fb5b10;
+    height: 300px;
+    margin-bottom: 200px;
+}
 
+.contact {
+    width: 35%;
+    background-color: #fb5b10;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.contact h3 {
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 13px;
+    margin: auto;
+}
+
+.infor {
+    text-align: left;
+    padding: 25px;
+    width: 65%;
+    background-color: #fff;
+    color: #151515;
+    font-size: 13.5px;
+}
+
+.infor p input {
+    border: none;
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    outline: none;
+}
+
+.infor  p{
+    margin: 10px 0;
+}
+
+.btn {
+    cursor: pointer;
+    float: right;
+    margin-right: 30px;
+    width: 120px;
+    height: 30px;
+    outline: none;
+    background-color: #fb5b10;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+}
