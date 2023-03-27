@@ -14,35 +14,38 @@
   />
     <script src="https://kit.fontawesome.com/4a8e26ddd0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
 
         <div class="container-one">
-            <div class="nav-lateral">
+            <div id="nav-lateral" class="nav-lateral">
+
+                <div class="border"><span>&#9776</span></div>
                 
                 <div class="logo">
                     <img src="img/sss.png" alt="">
                 </div>
 
                 <ul class="nav-menu">
-                    <li class="home"><i id="house" class="fa-solid fa-house-chimney"></i></i><a id="home" href="">Home</a></li>
+                    <li class="home"><i id="house" class="fa-solid fa-house-chimney"></i></i><a onclick="mostrartres()" id="home" href="#informacion">Home</a></li>
                     <li><i class="fa-solid fa-user"></i><a href="sub_me/about.html">About me</a></li>
                     <li><i class="fa-solid fa-server"></i><a  href="">Services</a></li>
                     <li><i class="fa-solid fa-box"></i><a onclick="mostrar()" href="#portafolio">Portfolio</a></li>
-                    <li><i class="fa-solid fa-comment"></i></i></i><a onclick="mostrar()"  href="#section-2">Contact</a></li>
+                    <li><i class="fa-solid fa-comment"></i></i></i><a onclick="mostrardos()"  href="#section-2">Contact</a></li>
                 </ul>
 
                 <p>Copyright © Miller Rivera. 
                     All rights reserved®.</p>
             </div>
     
-            <div class="info">
+            <div id="info" class="info">
                 <div id="toggle-menu" class="iconos">
                     <i class="fa-solid fa-gear" onclick="cambiar()"></i>
                 </div>
 
 
-                <div class="informacion">
+                <div id="informacion" class="informacion">
                     <h2>Hello, my name is <span id="nombre" class="nombre">Miller Rivera</span></h2>
                     <h2>i'm a <span id="typing" class="typing">Web Designer</span></h2>
                     <p>i'm a web Designer with extensive experience for over 2 years. My expertise is to create and website desing, graphic desing, and many more...</p>
@@ -54,16 +57,24 @@
                         <a href="#section-2" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                     </div>
 
-                    <button class="btn-1">More About Me</button>
+                    <div class="mmm">
+                        <button class="btn-1">More About Me</button>
+                        <div class="iconos-2">
 
-                    <div class="iconos-2">
-                        <div><i class="fa-brands fa-python"></i>
-                            <i class="fa-brands fa-square-js"></i></div>
-                        <div class="rectangulo">
-                            <h4>Programming</h>
-                            <h4>Languages</h4>
+                            
+                            <div class="rectangulo">
+                                <h4>Programming</h>
+                                <h4>Languages</h4>
+                            </div>
+                            <div><i class="fa-brands fa-python"></i>
+                                <i class="fa-brands fa-square-js"></i>
+                            </div>
+                            
                         </div>
                     </div>
+                 
+
+                    
                 </div>
                 <div class="photo">
                     <div class="cuadro">
@@ -131,6 +142,10 @@
                 
             </div>
 
+            
+        </section>
+
+        <section id="porta-2" class="porta-2">
             <div id="section-2" class="section-2">
                 <div class="contact">
                     <h3>CONTACT INFORMATION</h3>

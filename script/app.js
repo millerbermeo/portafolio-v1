@@ -1,18 +1,38 @@
+window.onload=inicio;
+
+
 function cambiar() {
-    document.getElementById('nombre').style.color="blue"
-    document.getElementById('typing').style.color="blue"
-    document.getElementById('home').style.color="blue"
-    document.getElementById('house').style.color="blue"
+    document.getElementById('nombre').style.color="#250bdf"
+    document.getElementById('typing').style.color="#250bdf"
+    document.getElementById('home').style.color="#250bdf"
+    document.getElementById('house').style.color="#250bdf"
 }
 
 function mostrar() {
+    document.getElementById('porta-2').style.display="none"
+    document.getElementById('info').style.display="grid"
     document.getElementById('portafolio').style.display="block"
 }
 
-const toggleMenu = document.getElementById('toggle-menu');
-const mainMenu = document.getElementById('toggle-menu');
+function mostrardos() {
+    document.getElementById('info').style.display="none"
+    document.getElementById('portafolio').style.display="none"
+    document.getElementById('porta-2').style.display="block"
+}
+
+function mostrartres() {
+    document.getElementById('info').style.display="grid"
+    document.getElementById('porta-2').style.display="none"
+}
+
+function inicio () {
+    const toglebtn = document.querySelector('.border');
+
+    toglebtn.addEventListener('click', function () {
+    document.getElementById('nav-lateral').classList.toggle('active')
+    })
+}
 
 
-toggleMenu.addEventListener('click', () => {
-    mainMenu.classList.toggle(cambiar());
-})
+
+
