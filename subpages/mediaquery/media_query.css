@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  height: 100vh;
+  background-image: url('img/pexels-adiprayogo-liemena-7826551.jpg');
+  background-size: cover;
+  /* background-color: #3d3c3c; */
+}
+
+.nav {
+  width: 100%;
+  background-color: #000000;
+}
+
+.nav-menu {
+  width: 95%;
+  height: 80px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  gap: 150px;
+}
+
+.left,
+.right {
+  display: flex;
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.nav-menu li {
+  color: #ffffff;
+  font-size: 13px;
+  list-style: none;
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+
+.nav-menu a:hover  li {
+  padding: 0;
+  border-bottom: 2px solid #0037A4;
+}
+
+.nav-menu i {
+  padding: 0 12px;
+  color: #ffffff;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  display: none;
+  padding: 0 8px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  z-index: 1;
+  color: #fff;
+  left: 10px;
+  font-size: 25px;
+}
+
+.calculadora {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.calculadora i {
+  color: #fff;
+  font-size: 35px;
+}
+
+.logo {
+  position: absolute;
+  top: 8px;
+  left: 40%;
+  width: 220px;
+  height: 75px;
+}
+
+.busqueda {
+  position: absolute;
+  top: 70px;
+  left: 37%;
+}
+
+.search {
+  padding-left: 10px;
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  border: 5px solid #000000;
+  outline: none;
+}
+
+.logo img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    width: 100%;
+    height: 100px;
+    background-color: #00000081;
+}
+
+.caja {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #ffffff;
+    gap: 50px;
+    text-align: center;
+}
+
+
+.cajas img {
+    width: 40%;
+}
+
+
+@media only screen and (max-width: 968px) {
+
+  .nav {
+    width: 100%;
+    height: 150px;
+    background-color: #222222;
+  }
+
+  .nav-menu {
+    position: absolute;
+    margin-top: -200px;
+    width: 100%;
+    height: 350px;
+    gap: 0;
+    background-color: #00000081;
+    z-index: -1;
+    transition: 500ms;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .calculadora {
+    display: block;
+  }
+
+  .nav-menu a {
+    padding: 15px 0px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    background-color: #000000;
+    padding: 0 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 90px;
+    left: 0;
+    width: 100%;
+  }
+
+  .search {
+    border: none;
+    height: 38px;
+    width: 450px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+
+  .caja {
+    width: 75%;
+    font-size: 10px;
+  }
+
+  .cajas img {
+    width: 40px;
+}
+}
