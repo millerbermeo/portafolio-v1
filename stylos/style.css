@@ -19,11 +19,11 @@ body {
 
 .container {
   width: 100%;
-  height: 100vh;
 }
 
 .container-one {
   display: flex;
+
 }
 
 .nav-lateral {
@@ -37,7 +37,7 @@ body {
 }
 
 #nav-lateral.active {
-  left: -17%;
+  left: -19%;
 }
 
 .nav-lateral .border span {
@@ -62,7 +62,7 @@ li {
   width: 70%;
   margin: 20px auto;
   border-bottom: 1px solid #fff;
-  font-weight: bold;
+  font-weight: bold;;
 }
 
 .nav-menu {
@@ -76,6 +76,7 @@ li a {
   font-weight: bold;
 }
 
+
 .home i,
 .home a {
   color: #fb5b10;
@@ -83,10 +84,11 @@ li a {
 }
 
 .info {
-  width: 83%;
+  margin: 0 auto;
+  width: 1000px;
   background-color: #151515;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   left: 17%;
   position: absolute;
   height: 101vh;
@@ -176,6 +178,27 @@ i {
   font-size: 30px;
 }
 
+.sub-title {
+  z-index: -1;
+}
+
+
+.sub-title .escribir {
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 52px;
+  border-left: 1px solid #fb5b10;
+  animation: escribir 5s steps(30) infinite alternate;
+  background-color: #151515;
+
+}
+
+@keyframes escribir {
+  from {width: 97%;}
+  to {width: 62%;}
+}
+
 .informacion p {
   margin: 30px 0;
   font-size: 20px;
@@ -211,10 +234,13 @@ p {
 .cuadro {
   width: 335px;
   height: 58vh;
-  background-image: url("../img/miller.png");
-  background-size: cover;
   display: block;
   margin: 100px auto;
+}
+
+.img-miller {
+  position: absolute;
+  width: 400px;
 }
 
 .fa-gear:hover {
@@ -357,29 +383,94 @@ a {
 
 
 
-@media screen and (max-width: 1050px) {
-  .informacion {
-    padding-top: 0;
-  }
+@media screen and (max-width: 800px) {
 
-  .info {
-    grid-template-columns: 1fr;
+  .container {
     left: 0;
-  }
-
-  .rectangulo {
-    display: flex;
   }
 
   .nav-lateral {
+    width: 220px;
+    left: -46%;
+  }
+
+  .iconos {
     display: none;
   }
 
-  .iconos-2 div {
+  #nav-lateral.active {
     left: 0;
   }
 
-  .mmm {
-    display: flex;
+  .info {
+    text-align: center;
+    width: 400px;
+    left: 0;
+    margin: 40px auto;
+    grid-template-columns: 1fr;
+    transition: all 500ms linear;
   }
+
+  .info.active2 {
+    opacity: 20%;
+  }
+  
+
+  .iconos-2 {
+    display: none;
+  }
+
+  .informacion {
+    padding: 20px;
+    width: 480px;
+  }
+
+  .cuadro {
+    margin: 0 auto;
+  }
+
+  .porta {
+    margin-top: 250px;
+    left: 5px;
+  }
+
+  .tarjetas {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tarjetas div {
+    width: 190px;
+    height: 150px;
+  }
+
+  .tarjetas div i {
+    font-size: 90px;
+  }
+
+  .btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .porta-2 {
+    left: 30px;
+  }
+
+  .section-2 {
+    width: 400px;
+    margin: 100px 0;
+  }
+
+  @keyframes escribir {
+    from {width: 100%;}
+    to {width: 0%;}
+  }
+
+  .img-miller {
+    position: relative;
+    width: 400px;
+  }
+
 }

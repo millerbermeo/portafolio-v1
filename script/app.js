@@ -30,6 +30,7 @@ function inicio () {
 
     toglebtn.addEventListener('click', function () {
     document.getElementById('nav-lateral').classList.toggle('active')
+    document.getElementById('info').classList.toggle('active2')
     })
 }
 
