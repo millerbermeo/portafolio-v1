@@ -1,50 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#sidebar {
-    position: fixed;
-    width: 18%;
-    height: 100%;
-    background-color: #2e2e2e;
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+.banner {
+    width: 100%;
+    height: 75px;
+    background-image: url('/img/header-offer-banner.jpg');
+    background-size: cover;
+
+}
+
+.bar-top {
+    width: 100%;
+    height: 125px;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
     color: #fff;
-    left: -18%;
-    transition: all 500ms linear;
+    gap: 80px;
+  
 }
 
-#sidebar.active {
-    left: 0;
-}
-
-#sidebar ul li {
-    list-style: none;
-    text-align: center;
-    padding: 20px 10px;
-    color:#fff;
-    border-bottom: 1px solid gray;
-}
 
 .logo {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
+    padding: 25px 20px;
 }
 
-#sidebar .toggle-btn {
-    position: absolute;
-    left: 270px;
-    top: 20px;
+.logo img {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.search {
+    margin: auto;
+}
+
+.busqueda {
+    display: flex;
+    background-color: #fff;
+}
+
+.busqueda i {
+    border-left: 1px solid #eee;
+    width: 65px;
+    height: 40px;
+    background-color: #fff;
+    color: #eee;
+    padding: 8px 15px;
+    font-size: 25px;
     cursor: pointer;
 }
 
-#sidebar .toggle-btn span {
-    color: #000;
-    display: block;
-    width: 40px;
-    text-align: center;
-    font-size: 30px;
-    border: 1px solid #000;
+.sub-busqueda {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    
 }
+
+.sub-busqueda a {
+    height: 20px;
+    margin: 0px 13px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.sub-busqueda a:hover {
+
+    border-bottom: 2px solid #ffffff;
+}
+
+input{
+    width: 635px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.login {
+    display: flex;
+    margin: auto;
+    margin-left: 110px;
+    padding-right: 50px;
+    font-size: 14px;
+}
+
+.login i {
+    font-size: 30px;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    background-color: #eee;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0 5px;
+    border: 1px solid #000; 
+    margin-right: 20px;  
+}
+
+.nav-menu a {
+    display: flex;
+    padding: 25px 35px;
+    text-decoration: none;
+}
+
+.nav-menu a li {
+    list-style: none;
+    font-size: 15px;
+    color: black;
+}
+
+.slide-bar {
+    width: 100%;
+    height: 400px;
+    background-image: url('img/gsp.jpg');
+    background-size: cover;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.tarjetas {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.tarjetas div img {
+    width: 95%;
+    border-radius: 5px;
+}
+
+.cont {
+    width: 85%;
+    margin: 0 auto;
+    height: 600px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.bar-superior {
+    display: flex;
+    margin: 0 auto;
+    width: 95%;
+    height: 60px;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 25px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nv-menu {
+    display: flex;
+    float: right;
+}
+
+.nv-menu a {
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.nv-menu a li {
+    list-style: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container div {
+    padding-top: 10px;
+    padding-left: 35px;
+    border: 1px solid #eee;
+}
+
+.container img {
+    width: 85%;
+    height: 190px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
