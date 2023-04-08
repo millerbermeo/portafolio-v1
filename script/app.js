@@ -1,7 +1,7 @@
 window.onload=inicio;
 
-
 function cambiar() {
+
     document.getElementById('nombre').style.color="#250bdf"
     document.getElementById('typing').style.color="#250bdf"
     document.getElementById('home').style.color="#250bdf"

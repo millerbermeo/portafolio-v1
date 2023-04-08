@@ -1,157 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda MMA</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <script src="https://kit.fontawesome.com/4a8e26ddd0.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-
+    <script
+      src="https://kit.fontawesome.com/4a8e26ddd0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="banner"></div>
 
     <div class="bar-top">
-        <div class="logo">
-            <img src="img/logo.png" alt="">
-        </div>
+      <div class="logo">
+        <img src="img/logo.png" alt="" />
+      </div>
 
-        <div class="search">
-            <div class="busqueda">
-                <input type="search" placeholder="Buscar Articulo">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="sub-busqueda">
-                <a href="">Nuestras tiendas</a>
-                <a href="">Cotizaciones</a>
-                <a href="">Compras mayoristas</a>
-                <a href="">Servicio al Cliente</a>
-                <a href="">Rastrear pedido</a>
-            </div>
+      <div class="search">
+        <div class="busqueda">
+          <input type="search" placeholder="Buscar Articulo" />
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-
-
-        <div class="login">
-            <span>Miller Rivera</span>
-            <i class="fa-solid fa-user"></i>
+        <div class="sub-busqueda">
+          <a id="tiendas" href="">Nuestras tiendas</a>
+          <a href="">Cotizaciones</a>
+          <a href="">Compras mayoristas</a>
+          <a href="">Servicio al Cliente</a>
+          <a href="">Rastrear pedido</a>
         </div>
+      </div>
+
+      <div class="login">
+        <button class="btn-2">
+          Login<i class="fa-regular fa-circle-user"></i>
+        </button>
+      </div>
     </div>
 
     <div class="menu">
-        <ul class="nav-menu">
-            <a href=""><span class="btn">&#9776;</span><li>Categorias</li></a>
-            <a href=""><li>Entrenamiento</li></a>
-            <a href=""><li>Deportes</li></a>
-            <a href=""><li>Ortopedico</li></a>
-            <a href=""><li>Implementacion</li></a>
-            <a href=""><li>Hobbies</li></a>
-            <a href=""><li>Blog</li></a>
-            <a href=""><i class="fa-solid fa-cart-shopping"></i><li>Carrito</li></a>
-        </ul>
+      <ul class="nav-menu">
+        <a href="" class="categoria"
+          ><span class="btn">&#9776;</span>
+          <li id="cate">Categorias</li></a
+        >
+        <a href=""><li>Entrenamiento</li></a>
+        <a href=""><li>Deportes</li></a>
+        <a href=""><li>Ortopedico</li></a>
+        <a href=""><li>Implementacion</li></a>
+        <a href=""><li>Hobbies</li></a>
+        <a href=""><li>Blog</li></a>
+        <a href=""
+          ><i class="fa-solid fa-cart-shopping"></i>
+          <li>Carrito</li></a
+        >
+      </ul>
     </div>
 
-    <div class="slide-bar">
+    <div id="side" class="side">
+      <div class="slide-bar" id="slide-1">
+        <div class="tarjeta-carousel" id="carousel-2">
+          <img src="img/pexels-pixabay-260447.jpg" alt="" />
+        </div>
 
+        <div class="flechas-carousel">
+          <a href="#slide-3"><i class="fa-solid fa-chevron-left"></i></a>
+          <a href="#slide-2"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+
+      <div class="slide-bar" id="slide-2">
+        <div class="tarjeta-carousel" id="carousel-1">
+          <img src="img/pexels-pavel-danilyuk-6296010.jpg" alt="" />
+        </div>
+        <div class="flechas-carousel">
+          <a href="#slide-1"><i class="fa-solid fa-chevron-left"></i></a>
+          <a href="#slide-3"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+
+      <div class="slide-bar" id="slide-3">
+        <div class="tarjeta-carousel" id="carousel-3">
+          <img src="img/pexels-rodnae-productions-7187949.jpg" alt="" />
+        </div>
+        <div class="flechas-carousel">
+          <a href="#slide-2"><i class="fa-solid fa-chevron-left"></i></a>
+          <a href="#slide-1"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
     </div>
 
     <div class="tarjetas">
-        <div>
-            <img src="img/tony.jpg" alt="">
-        </div>
+      <div>
+        <img src="img/tony.jpg" alt="" />
+      </div>
 
-        <div>
-            <img src="img/khabib.jpg" alt="">
-        </div>
+      <div>
+        <img src="img/khabib.jpg" alt="" />
+      </div>
 
-        <div>
-            <img src="img/dus.webp" alt="">
-        </div>
+      <div>
+        <img src="img/dus.webp" alt="" />
+      </div>
     </div>
 
     <div class="cont">
+      <div class="bar-superior">
+        <ul>
+          <li class="title">Nuestras Categorías Destacadas</li>
+        </ul>
 
-        <div class="bar-superior">
-            <ul><li class="title">Nuestras Categorías Destacadas</li></ul>
+        <ul class="nv-menu">
+          <a href=""><li>Fitnes</li></a>
+          <a href=""><li>Ciclismo</li></a>
+          <a href=""><li>Futbol</li></a>
+          <a href=""><li>Implementacion</li></a>
+        </ul>
 
-            <ul class="nv-menu">
-                <a href=""><li>Fitnes</li></a>
-                <a href=""><li>Ciclismo</li></a>
-                <a href=""><li>Futbol</li></a>
-                <a href=""><li>Implementacion</li></a>
-            </ul>
+        <ul>
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-right"></i>
+        </ul>
+      </div>
 
-            <ul>
-                <i class="fa-solid fa-arrow-left"></i>
-                <i class="fa-solid fa-arrow-right"></i>
-            </ul>
+      <div class="container">
+        <div>
+          <img src="img/saco.webp" alt="" />
+          <br />
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h3>Saco Boxeo<i class="fa-brands fa-shopify"></i></h3>
+          <p>$120.00</p>
         </div>
 
-        <div class="container">
-
-            <div>
-                <img src="img/saco.webp" alt="">
-                <span>********</span>
-                <h3>Saco Boxeo</h3>
-                <p>$120.00</p>
-            </div>
-    
-            <div>
-                <img src="img/panta.webp" alt="">
-                <span>********</span>
-                <h3>Short MMA</h3>
-                <p>$120.00</p>
-            </div>
-    
-            <div>
-                <img src="img/venda.webp" alt="">
-                <span>********</span>
-                <h3>Vendas Everlast</h3>
-                <p>$120.00</p>
-            </div>
-    
-            <div>
-                <img src="img/mma.webp" alt="">
-                <span>********</span>
-                <h3>Guantes MMA</h3>
-                <p>$120.00</p>
-            </div>
-
-            <div>
-                <img src="img/box.webp" alt="">
-                <span>********</span>
-                <h3>Guantes Boxeo</h3>
-                <p>$120.00</p>
-            </div>
-
-            <div>
-                <img src="img/coa.webp" alt="">
-                <span>********</span>
-                <h3>Guantes Coach</h3>
-                <p>$120.00</p>
-            </div>
-
-            <div>
-                <img src="img/pro.webp" alt="">
-                <span>********</span>
-                <h3>Cabezera Box</h3>
-                <p>$120.00</p>
-            </div>
-
-            <div>
-                <img src="img/guan.webp" alt="">
-                <span>********</span>
-                <h3>Guantes Bx</h3>
-                <p>$120.00</p>
-            </div>
-    
+        <div>
+          <img src="img/panta.webp" alt="" />
+          <br />
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h3>Short MMA<i class="fa-brands fa-shopify"></i></h3>
+          <p>$120.00</p>
         </div>
+
+        <div>
+          <img src="img/venda.webp" alt="" />
+          <br />
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h3>Vendas Everlast<i class="fa-brands fa-shopify"></i></h3>
+          <p>$120.00</p>
+        </div>
+
+        <div>
+          <img src="img/mma.webp" alt="" />
+          <br />
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h3>Guantes MMA<i class="fa-brands fa-shopify"></i></h3>
+          <p>$120.00</p>
+        </div>
+
+        <div>
+          <img src="img/box.webp" alt="" />
+          <br />
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h3>Guantes Boxeo<i class="fa-brands fa-shopify"></i></h3>
+          <p>$120.00</p>
+        </div>
+
+        <div>
+          <img src="img/coa.webp" alt="" />
+          <br />
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h3>Guantes Coach<i class="fa-brands fa-shopify"></i></h3>
+          <p>$120.00</p>
+        </div>
+
+        <div>
+          <img src="img/pro.webp" alt="" />
+          <br />
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h3>Cabezera Box<i class="fa-brands fa-shopify"></i></h3>
+          <p>$120.00</p>
+        </div>
+
+        <div>
+          <img src="img/guan.webp" alt="" />
+          <br />
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <h3>Guantes Bx<i class="fa-brands fa-shopify"></i></h3>
+          <p>$120.00</p>
+        </div>
+      </div>
     </div>
 
-    
-    
+    <div class="footer">
+      <div class="right">
+        <h1>MMA Fighting</h1>
+        <p>
+          Copyright © Survivor Colombia. Todos los derechos reservados. No se
+          pueden usar imágenes ni logotipos contenidos en este sitio sin el
+          permiso expreso Survivor Professional ®.
+        </p>
+
+        <div class="redes">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+        <p class="copy">Copyright © Miller Rivera. All rights reserved®.</p>
+      </div>
+
+      <div class="left">
+        <img src="img/logo.png" alt=""/>
+        <div class="about">
+            <a href="">Preguntas Frucuentes</a>
+            <a href="">Contactenos</a>
+            <a href="">Politica de privacidad</a>
+            <br>
+            <a href="">Politica de envios</a>
+            <a href="">Politica de deboluciones</a>
+            <a href="">Terminos y condiciones</a>
+        </div>
+      </div>
+    </div>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

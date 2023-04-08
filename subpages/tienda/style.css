@@ -6,15 +6,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
 }
 
 .banner {
     width: 100%;
     height: 75px;
-    background-image: url('/img/header-offer-banner.jpg');
+    background-image: url('img/header-offer-banner.jpg');
     background-size: cover;
 
 }
@@ -26,7 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     color: #fff;
-    gap: 80px;
+    gap: 20px;
   
 }
 
@@ -56,9 +59,9 @@ body {
     border-left: 1px solid #eee;
     width: 65px;
     height: 40px;
-    background-color: #fff;
+    background-color: #000000;
     color: #eee;
-    padding: 8px 15px;
+    padding: 8px 20px;
     font-size: 25px;
     cursor: pointer;
 }
@@ -74,12 +77,18 @@ body {
     height: 20px;
     margin: 0px 13px;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
+    font-weight: bold;
+}
+
+#tiendas {
+    color: rgb(255, 221, 0);
+    border-bottom: 2px solid #ffffff;
 }
 
 .sub-busqueda a:hover {
-
+    color: rgb(255, 221, 0);
     border-bottom: 2px solid #ffffff;
 }
 
@@ -99,8 +108,25 @@ input{
     font-size: 14px;
 }
 
+.btn-2 {
+    width: 110px;
+    height: 43px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 3px solid goldenrod;
+    background-color: #222222;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .7s;
+}
+
+.btn-2:hover {
+    background-color: goldenrod;
+}
+
 .login i {
-    font-size: 30px;
+    font-size: 15px;
+    margin-left: 10px;
 }
 
 .menu {
@@ -116,30 +142,113 @@ input{
 
 .btn {
     padding: 0 5px;
-    border: 1px solid #000; 
+    border: 1px solid #ffffff; 
     margin-right: 20px;  
 }
 
 .nav-menu a {
     display: flex;
-    padding: 25px 35px;
+    padding: 23px 35px;
     text-decoration: none;
+    transition: .3s;
+}
+
+.categoria {
+    background-color: #f8ba00;
+    border-right: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+#cate {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.fa-cart-shopping {
+    padding: 0 10px;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+.nav-menu a:hover {
+    background-color: #f8ba00;
+}
+
+.nav-menu a:hover li {
+    color: #ffffff;
 }
 
 .nav-menu a li {
     list-style: none;
-    font-size: 15px;
+    font-size: 17px;
     color: black;
 }
 
-.slide-bar {
+/* carousel ------------------------- */
+
+#side {
     width: 100%;
     height: 400px;
-    background-image: url('img/gsp.jpg');
-    background-size: cover;
+    overflow: hidden;
     margin-bottom: 20px;
-    gap: 10px;
 }
+
+
+
+.slide-bar {
+    color: #d9d9d9;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    gap: 10px;
+    position: relative;
+}
+
+.tarjeta-carousel {
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    text-align: center;
+
+}
+
+.tarjeta-carousel img {
+    width: 70%;
+    height: 100%;
+}
+
+.flechas-carousel {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.flechas-carousel a {
+    text-decoration: none;
+}
+
+.flechas-carousel i {
+    font-size: 35px;
+    color: #ffffff;
+    padding: 8px 15px;
+    transition: all .3s;
+    border-radius: 50%;
+}
+
+.flechas-carousel i:hover {
+    background-color: #f8ba00;
+}
+
+
+
+
+
 
 .tarjetas {
     width: 85%;
@@ -147,20 +256,41 @@ input{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
+    gap: 20px;
+}
+
+.tarjetas div {
+    border-radius: 5px;
+    overflow: hidden;
+    
 }
 
 .tarjetas div img {
-    width: 95%;
-    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 1.5s;
+    opacity: 90%;
+    
+}
+
+.tarjetas div img:hover {
+    opacity: 100%;
+    cursor: pointer;
+    transform: scale(1.2);
+   
 }
 
 .cont {
+    background-color: #ffffff;
     width: 85%;
     margin: 0 auto;
-    height: 600px;
+    height: 700px;
     border-radius: 5px;
-    border: 1px solid #eee;
+    border: 1px solid 	#d9d9d9;
     padding: 10px;
+    margin-bottom: 100px;
 }
 
 .bar-superior {
@@ -170,12 +300,15 @@ input{
     height: 60px;
     justify-content: space-between;
     padding: 20px 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #0000001e;
+    /* box-shadow: 1px 5px 15px #0000001e; */
     margin-bottom: 20px;
 }
 
 .title {
     font-size: 25px;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 ul {
@@ -194,25 +327,91 @@ ul {
 
 .nv-menu a li {
     list-style: none;
+    color: gray;
 }
 
 .container {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.fa-shopify {
+    padding: 0px 10px;
 }
 
 .container div {
-    padding-top: 10px;
-    padding-left: 35px;
-    border: 1px solid #eee;
-}
+    width: 260px;
+    height: 270px;
+    text-align: center;
 
+    margin-bottom: 10px;
+    border-bottom: 1px solid #0000001e;
+    border-right: 1px solid #0000001e;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #0000000f;
+}
 .container img {
     width: 85%;
     height: 190px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #eee;
+    margin-bottom: 5px;
+    transition: 1s;
 }
 
+.container img:hover {
+    transform: scale(1.1);
+}
+
+/* footer----------------------- */
+
+.footer {
+    width: 100%;
+    height: 300px;
+    background-color: #222222;
+    padding: 50px;
+    display: flex;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    width: 53%;
+    border-right: 1px solid #ffffff;
+}
+
+.redes {
+    font-size: 30px;
+}
+
+.copy {
+    padding-top: 30px;
+    font-size: 12px;
+}
+
+.right >* {
+    margin: 15px;
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #ffffff;
+    transition: all .3s;
+}
+
+.about a:hover {
+    color: #4b4b4ba8;
+}
