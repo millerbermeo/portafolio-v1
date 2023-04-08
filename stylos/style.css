@@ -187,7 +187,6 @@ i {
   position: absolute;
   right: 0;
   width: 0;
-  height: 52px;
   border-left: 1px solid #fb5b10;
   animation: escribir 5s steps(30) infinite alternate;
   background-color: #151515;
@@ -390,8 +389,9 @@ a {
   }
 
   .nav-lateral {
-    width: 220px;
-    left: -46%;
+    width: 250px;
+    height: 100ch;
+    left: -65%;
   }
 
   .iconos {
@@ -421,8 +421,12 @@ a {
   }
 
   .informacion {
-    padding: 20px;
-    width: 480px;
+    padding: 25px;
+    width: 400px;
+  }
+
+  #hh2 {
+    font-size: 35px;
   }
 
   .cuadro {
@@ -430,16 +434,22 @@ a {
   }
 
   .porta {
+    width: 400px;
     margin-top: 250px;
-    left: 5px;
+    left: 0px;
+  }
+
+  .porta h2 {
+    margin-right: 60px;
   }
 
   .tarjetas {
     grid-template-columns: 1fr 1fr;
+    margin-right: 50px;
   }
 
   .tarjetas div {
-    width: 190px;
+    width: 150px;
     height: 150px;
   }
 
@@ -469,8 +479,9 @@ a {
   }
 
   .img-miller {
+    padding-right: 40px;
     position: relative;
-    width: 400px;
+    width: 340px;
   }
 
 }
