@@ -382,16 +382,20 @@ a {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
+
+
 
   .container {
+    position: absolute;
+    width: 100%;
     left: 0;
   }
 
   .nav-lateral {
     width: 250px;
-    height: 100ch;
-    left: -65%;
+    height: 100vh;
+    left: -250px;
   }
 
   .iconos {
@@ -404,9 +408,9 @@ a {
 
   .info {
     text-align: center;
-    width: 400px;
+    width: 360px;
     left: 0;
-    margin: 40px auto;
+    margin-top: 40px;
     grid-template-columns: 1fr;
     transition: all 500ms linear;
   }
@@ -421,35 +425,28 @@ a {
   }
 
   .informacion {
-    padding: 25px;
-    width: 400px;
+    width: 360px;
   }
+  
 
   #hh2 {
     font-size: 35px;
   }
 
-  .cuadro {
-    margin: 0 auto;
-  }
-
   .porta {
-    width: 400px;
-    margin-top: 250px;
+    width: 360px;
+    margin-top: 350px;
     left: 0px;
   }
 
-  .porta h2 {
-    margin-right: 60px;
-  }
-
   .tarjetas {
+    padding-top: 50px;
     grid-template-columns: 1fr 1fr;
-    margin-right: 50px;
+    gap: 20px;
   }
 
   .tarjetas div {
-    width: 150px;
+    width: 160px;
     height: 150px;
   }
 
@@ -479,9 +476,9 @@ a {
   }
 
   .img-miller {
-    padding-right: 40px;
-    position: relative;
-    width: 340px;
+    position: absolute;
+    left: 10px;
+    width: 100%;
   }
 
 }
