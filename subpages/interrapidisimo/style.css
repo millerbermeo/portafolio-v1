@@ -175,11 +175,11 @@ body {
     }
 
     .search {
-        width: 400px;
+        width: 300px;
         border: none;
         height: 35px;
         top: 72px;
-        left: 9%;
+        left: 20%;
     }
     
     .nav-menu {
@@ -198,12 +198,10 @@ body {
     .nav-menu.noactive {
         height: 1px;
         overflow: hidden;
-        
     }
 
     .nav-menu.active {
         height: 311px;
-
     }
 
     a {
@@ -244,7 +242,7 @@ body {
 
     .calculadora {
         display: block;
-        width: 70px;
+        width: 60px;
         float: right;
         color: #ffffff;
     }

@@ -22,6 +22,4 @@ function inicio() {
             menu.classList.remove('quitar')
         }
     })
-
-
 }
