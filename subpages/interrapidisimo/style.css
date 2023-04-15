@@ -139,6 +139,7 @@ body {
         cursor: pointer;
         transition: .4s;
         padding-bottom: 130px;
+
     }
 
     .logo {
@@ -150,7 +151,7 @@ body {
         font-size: 20px;
     }
 
-    .logo.quitar {
+    .quitar {
         display: none;
     }
 
@@ -166,16 +167,16 @@ body {
         color: #c96007;
     }
 
-    .logo2.poner {
+    .poner {
         display: block;
     }
     
     .interrapidisimo {
-        left: 25%;
+        left: 19%;
     }
 
     .search {
-        width: 300px;
+        width: 230px;
         border: none;
         height: 35px;
         top: 72px;
@@ -195,12 +196,12 @@ body {
         flex-direction: column;
     }
 
-    .nav-menu.noactive {
+    .noactive {
         height: 1px;
         overflow: hidden;
     }
 
-    .nav-menu.active {
+    .active {
         height: 311px;
     }
 
