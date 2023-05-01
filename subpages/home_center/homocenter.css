@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.barra-top{
+    width: 100%;
+    height: 28px;
+    background-color: #f0f0f0;
+}
+
+.barra-top > .content {
+    width: 95%;
+    height: 28px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.barra-top > .content a{
+    font-size: 12px;
+    padding: 0 5px;
+    border-left: 1px solid rgb(159, 158, 158);
+    text-decoration: none;
+    color: #000;
+}
+
+#borrar-linea, #borrar-linea-2 {
+    border-left: #f0f0f0;
+}
+
+.barra-top > .content > .left a{
+    font-size: 11px;
+}
+
+.barra-principal {
+    width: 95%;
+    margin: 0 auto;
+    height: 95px;
+    display: flex;
+    align-items: center;
+}
+
+.img-home {
+    margin: 25px 35px;
+}
+
+.search {
+    width: 470px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border:  .3px solid #f2efef;
+}
+
+.opciones {
+    display: flex;
+}
+
+.ubicacion {
+ display: flex;
+ margin: 0 20px;
+}
+
+.fa-location-dot {
+    font-size: 25px;
+}
+
+.parrafo{
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.parrafo > span {
+    font-size: 14px;
+}
+
+::placeholder {
+    padding-left: 20px;
+}
+
+.carrito {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.fa-cart-shopping {
+    font-size: 25px;
+}
+
+.programa {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    gap: 5px;
+}
+
+.programa img {
+    width: 30px;
+}
+
+#cmr {
+    font-size: 13px;
+}
+
+.programa p.cmr {
+    font-size: 23px;
+}
+
+.cuenta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin: 0 10px;
+    gap: 5px;
+}
+
+.fa-user {
+    font-size: 20px;
+}
+
+.contenido {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+}
+
+.contenido div {
+    font-size: 10px;
+    padding: 8px;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    color: #fff;
+    background-color: #000;
+}
+
+.big {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.yellow {
+    color: goldenrod;
+    margin: 0 3px;
+}
+
+.ana {
+    position: absolute;
+    bottom: 13px;
+    right: 20px;
+    transition: all 3000ms;
+    cursor: pointer;
+}
+
+.ana img {
+    width: 120px;
+}
+
+.chat {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #f5f5f5;
+    bottom: 0;
+    right: 20px;
+    transition: all 800ms;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.chat.active {
+    width: 375px;
+    height: 583px;
+}
+
+.nav {
+    text-align: center;
+    padding: 0 15px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0072ce;
+    color: #fff;
+    font-size: 12px;
+}
+
+.fa-bars {
+    font-size: 25px;
+}
+
+.fa-rotate-right {
+    font-size: 25px;
+}
+
+.fa-xmark {
+    font-size: 25px;
+}
+
+.img-cerrar {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-cerrar img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.dere {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ññññññññññññññññññññññññññññññññññ */
+
+.chat-contenido {
+    overflow-x:hidden;
+    height: 460px;
+}
+
+.dere p {
+    font-size: 12px;
+}
+
+.chat-contenido >*{
+    display: flex;
+    flex-direction: column;
+}
+
+.bienvendida {
+    margin: 20px;
+    padding: 10px;
+    font-size: 12px;
+    box-shadow: 0 0 5px #c3c0c0;
+}
+
+.opt {
+    margin: 25px;
+    padding: 10px;
+    font-size: 10px;
+    box-shadow: 0 0 5px #c3c0c0;
+    margin-bottom: 15px;
+}
+
+.opt button {
+    color: #0072ce;
+    margin: 0 20px;
+    border-radius: 20px;
+    width: 260px;
+    height: 43px;
+    outline: none;
+    border: none;
+    border: 1px solid #0072ce;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.opt button:hover {
+    background-color: #0072ce;
+    color: #fff;
+
+}
+
+.opt >* {
+    margin: 5px 0;
+}
+
+.tiempo {
+    font-size: 12px;
+}
+
+.consulta input {
+    width: 100%;
+    height: 68px;
+    outline: none;
+    border: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+.fa-paper-plane {
+    position: absolute;
+    right: 20px;
+    font-size: 150%;
+    bottom: 5px;
+    color: #ffffff;
+    background-color: #0072ce;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.nav-desplegable {
+    position: absolute;
+    width: 100%;
+    height: 520px;
+    transition: all 500ms;
+    left: -100%;
+    background-color: #f5f5f5;
+}
+
+.nav-desplegable.desplegar {
+    left: 0;
+    z-index: 0;
+}
+
+.menu {
+    padding: 10px 0;
+}
+
+.menu li {
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+}
+.menu li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+
+}
+
+.menu li a i {
+    font-size: 23px;
+    margin: 0 20px;
+}
+
+/* estilos del carousel */
+
+.contenedor {
+    margin: 20px 0;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.atras {
+    bottom: 130px;
+    left: 20px;
+}
+
+.adelante {
+    bottom: 130px;
+    right: 20px;
+}
+
+.carusel {
+    width: 100%;
+    height: 325px;
+}
+
+.botones {
+    cursor: pointer;
+    background-color: #ececec;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #000000;
+    z-index: 1;
+}
+
